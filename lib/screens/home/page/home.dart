@@ -1,4 +1,8 @@
+// Home.dart
+
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/common/widget/appbar.dart';
+import 'package:icons_plus/icons_plus.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -6,16 +10,10 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Mega Shop",
-          style: TextStyle(
-            fontFamily: "DMSans",
-          ),
-        ),
+      appBar: FAppBar(
+        title: "Mega Shop",
+        firstIcon: Iconsax.notification_bing_outline,
       ),
     );
   }
 }
-// tinyurl.com/cse414-figma
-// Splash Screen

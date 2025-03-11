@@ -1,4 +1,3 @@
-// Colors.dart
 import 'package:flutter/material.dart';
 
 class FColors {
@@ -23,4 +22,5 @@ class FColors {
 
   // Font Colors
   static const oceanBlue = Color(0xFF3669C9);
+
 }
