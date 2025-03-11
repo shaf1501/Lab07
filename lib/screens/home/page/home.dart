@@ -13,6 +13,7 @@ class Home extends StatelessWidget {
       appBar: FAppBar(
         title: "Mega Shop",
         firstIcon: Iconsax.notification_bing_outline,
+        backButton: true,
       ),
     );
   }

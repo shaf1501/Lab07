@@ -8,11 +8,13 @@ class FAppBar extends StatelessWidget implements PreferredSizeWidget {
     required this.title,
     required this.firstIcon,
     this.secondIcon = IonIcons.cart,
+    this.backButton = false,
   });
 
   final String title;
   final IconData firstIcon;
   final IconData secondIcon;
+  final bool backButton;
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
@@ -20,6 +22,7 @@ class FAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      leading: backButton ? Icon(Iconsax.arrow_left_2_outline): null ,
       title: Text(
         "Mega Shop",
         style: TextStyle(
