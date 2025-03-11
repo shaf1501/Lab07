@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'screens/home/page/home.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp(const FreebeesEcom());
 }
 
 class FreebeesEcom extends StatelessWidget {
